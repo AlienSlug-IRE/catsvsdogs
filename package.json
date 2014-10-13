@@ -1,0 +1,21 @@
+{
+    "name": "CatsVSDogs",
+    "description": "Cats vs Dogs",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "requirejs": "latest",
+        "connect": "2.7.0"
+    },
+    "devDependencies": {
+        "mocha": "latest",
+        "chai": "latest",
+        "grunt": "latest",
+        "grunt-exec": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-sass": "latest"
+    },
+    "scripts": {
+        "grunt": "node_modules/.bin/grunt"
+    }
+}
