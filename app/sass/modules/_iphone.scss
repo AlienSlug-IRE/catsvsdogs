@@ -1,0 +1,115 @@
+$width: 315px;
+$height: 645px;
+$screen-width: 264px;
+$screen-height: 459px;
+$primary-color: #cccccc;
+
+body {
+	
+ 	color:#cccccc;
+}
+
+.iphone-preview{
+	.iphone{
+		background: url('/img/iphone-5s-chrome.png') no-repeat;
+		background-size: $width $height;
+		width:$width;
+		height:$height;
+		float: left;
+		.screen{
+			margin: 95px 0 0 28px;
+			&.locked{
+				background: url('/img/iphone-5s-ios7-locked.png') no-repeat;
+				background-size: $screen-width $screen-height;
+				width:$screen-width;
+				height:$screen-height;
+				text-align:center;
+				.clock{
+					font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  					font-weight:100;
+					font-size:80px; 
+					padding: 25px 0 0 0;
+				}
+				.date{
+					font-size:12px;
+				}
+				.notification{
+					width:$screen-width;
+					padding: 30px 0 0 10px;
+					.image{
+						float:left;
+						width:20px;
+						height:20px;
+						margin: 0 10px 0 0;
+					}
+					.text{
+						float:left;
+						width:210px;
+					}
+					h4, p{
+						font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+						text-align: left;
+						color:$primary-color;
+ 						text-transform: none;
+ 						background: none;
+ 						padding: 0;
+ 						margin: 0;
+ 					}
+ 					h4{
+ 						font-weight:500;
+ 						span{
+ 							
+ 						}
+ 					}
+				}
+			}
+		}
+	}
+	.modes{
+		text-align: center;
+		h2{
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+ 			font-weight: 300;
+ 			color:$primary-color;
+ 			text-transform: none;
+ 			font-size: 20px;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li{
+				background: url('/img/ios-modes.png') no-repeat;
+				height: 157px;
+				width: 80px;
+				color:$primary-color;
+ 				text-transform: none;
+ 				margin: 0 0 50px 0;
+ 				a{
+ 					height: 160px;
+					display: block;
+ 				}
+ 				&.locked{
+ 					background-position: 0px 0px;
+ 					&.active{
+ 						background-position: 0px -157px;
+ 					}
+ 				}
+ 				&.banner{
+ 					background-position: -80px -0px;
+ 					&.active{
+ 						background-position: -80px -157px;
+ 					}
+ 				}
+ 				&.alert{
+ 					background-position: -160px -0px;
+ 					&.active{
+ 						background-position: -160px -157px;
+ 					}
+ 				}
+			}
+		}
+		float:left;
+	}
+	background: #cccccc;
+}
